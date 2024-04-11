@@ -17,6 +17,20 @@ for (int i = 0; i < N; i++)
             arr[i] = Console.ReadLine();
  }
 
+
+int count = 0;
+
+for (int j = 0; j < N; j ++)
+
+if (arr[j].Length <= 3)
+
+    {
+        count++;
+        
+    }
+
+Console.WriteLine("Количество строк меньше или равных 3 символам =" + " " + count);
+
 }
 
 }
