@@ -35,17 +35,27 @@ int index = 0;
 
 string[] res = new string[count];
 
-for (int l = 0; l < N; l++)
+foreach (var qual in arr)
 
-if (arr[l].Length <= 3)
+if (qual.Length <= 3)
 
 {
 
-res[index++] = Convert.ToString(arr[l]);
+res[index++] = qual;
 
 }
 
-Console.WriteLine("Итоговый массив:" + " " + res);
+Console.WriteLine("Итоговый массив:" + " " );
+
+foreach (var qual in res)
+
+{
+
+Console.Write(qual + " ");
+
+}
+
+Console.WriteLine("");
 
 }
 
