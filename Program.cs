@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 class Prog
 {
@@ -6,6 +7,7 @@ class Prog
    
  {
 
+Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16");
 Console.WriteLine("Введите количество строк в массиве:");
 int N = Convert.ToInt32(Console.ReadLine());
 string[] arr = new string[N];
@@ -29,7 +31,7 @@ if (arr[j].Length <= 3)
         
     }
 
-Console.WriteLine("Количество строк меньше или равных 3 символам =" + " " + count);
+Console.WriteLine("Количество строк, меньше или равных 3 символам =" + " " + count);
 
 int index = 0;
 
